@@ -11,9 +11,5 @@
   "description": "",
   "devDependencies": {
     "express": "^5.2.1"
-  },
-  "dependencies": {
-    "@prisma/client": "^5.22.0",
-    "dotenv": "^17.2.3"
   }
 }
