@@ -1,20 +1,11 @@
-import express from 'express';
-const app = express();
-app.use(express.json());
-const users = [];
+const express = require('express')
+const app = express()
+const port = 3000
 
+app.get('/', (req, res) => {
+  res.send('Feliz Ano Novo')
+})
 
-app.get('/usuarios', (req, res) => {
-
-    res.status(200).json(users);
-   });
-
-app.post('/usuarios', (req, res) => {
-  users.push(req.body);
-  
-  res.status(201).json(req.body);
-  });
-
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
-  });
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
