@@ -1,9 +1,10 @@
-const express = require('express')
+
+import express from 'express'
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Feliz Ano Novo')
+  res.send('Feliz Ano Novo Com import')
 })
 
 app.listen(port, () => {
